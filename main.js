@@ -4,7 +4,9 @@ var app = new Vue({   //creating a vue instance
     data:{
 
         Product:'Socks',
-        image: './assets/vmSocks-green-onWhite.jpg'
+        image: './assets/vmSocks-green-onWhite.jpg',
+        inStock: false,
+        details: ["80% coton","20% plyester", "gender-neutral"]
     }
 
 });
