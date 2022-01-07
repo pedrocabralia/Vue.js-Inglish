@@ -6,7 +6,26 @@ var app = new Vue({   //creating a vue instance
         Product:'Socks',
         image: './assets/vmSocks-green-onWhite.jpg',
         inStock: false,
-        details: ["80% coton","20% plyester", "gender-neutral"]
+        details: ["80% coton","20% plyester", "gender-neutral"],
+        
+        variants:[
+               { variantId: 2234,
+                color: "green"},
+                
+                { variantId: 2235,
+                    color: "blue"}],
+        cart:0
+       },
+
+       methods: {
+
+        addToCart(){
+
+            this.cart +=1;
+
+
+        }
     }
+
 
 });

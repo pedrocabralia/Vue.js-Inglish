@@ -21,8 +21,21 @@
             <ul>
                 <li v-for="details in details">{{details}}</li>
             </ul>
+            <div v-for = "variant in variants":Key = "variant.variantId">
+                <p>{{variant.variantColor}}</p>
+            </div>
+
+            <div class="cart">
+                <p>Cart({{cart}})</p>
+                <button v-on:click="addToCart">Add to card</button>
+
+            </div>
+
         </div>
-        
+
+           
+
+
      </div>  
     </div>
 
