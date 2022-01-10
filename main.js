@@ -10,19 +10,29 @@ var app = new Vue({   //creating a vue instance
         
         variants:[
                { variantId: 2234,
-                color: "green"},
+                 variantColor: "GREEN",
+                 variantImage: "./assets/vmSocks-green-onWhite.jpg"     
+                
+                },
                 
                 { variantId: 2235,
-                    color: "blue"}],
+                  variantColor: "BLUE",
+                  variantImage: "./assets/vmSocks-blue-onWhite.jpg"}],
         cart:0
        },
 
        methods: {
 
-        addToCart(){
+        addToCart()
+        {
 
             this.cart +=1;
+        
+        },
 
+        updateProduct(variantImage)
+        { 
+            this.image = variantImage;
 
         }
     }

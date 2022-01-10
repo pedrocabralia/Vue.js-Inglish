@@ -22,7 +22,10 @@
                 <li v-for="details in details">{{details}}</li>
             </ul>
             <div v-for = "variant in variants":Key = "variant.variantId">
-                <p>{{variant.variantColor}}</p>
+                <p v-on:mouseover="updateProduct(variant.variantImage)">
+                    {{variant.variantColor}}
+                
+                </p>
             </div>
 
             <div class="cart">
