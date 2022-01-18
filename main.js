@@ -10,13 +10,13 @@ var app = new Vue({   //creating a vue instance
         
         variants:[
                { variantId: 2234,
-                 variantColor: "GREEN",
+                 variantColor: "green",
                  variantImage: "./assets/vmSocks-green-onWhite.jpg"     
                 
                 },
                 
                 { variantId: 2235,
-                  variantColor: "BLUE",
+                  variantColor: "blue",
                   variantImage: "./assets/vmSocks-blue-onWhite.jpg"}],
         cart:0
        },
